@@ -1,8 +1,8 @@
-angular.modules('anime', ['anime.Index','ngroute'])
+angular.modules('anime', ['anime.index','ngroute'])
 .confif(function ($routeProvider, $httpProvider) {
     $routeProvider
       .when('/', {
-          templateUrl: 'app/index/Index.html',
-          controller: 'IndexController'
+          templateUrl: 'app/index/index.html',
+          controller: 'IndexCtrl'
       })
 })
