@@ -2,9 +2,8 @@
   "name": "mvc-hr",
   "version": "0.0.1",
   "description": "A  MVC for Hack Reactor",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --ignore node_modules server.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +21,9 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.7.0",
+    "nodemon": "^1.11.0"
   }
 }
