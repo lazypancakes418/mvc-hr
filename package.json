@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/rjmohammad/mvc-hr/issues"
   },
-  "homepage": "https://github.com/rjmohammad/mvc-hr#readme"
+  "homepage": "https://github.com/rjmohammad/mvc-hr#readme",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
 }
