@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A  MVC for Hack Reactor",
   "scripts": {
-    //"start": "nodemon --ignore node_modules server.js"
+
   },
   "repository": {
     "type": "git",
