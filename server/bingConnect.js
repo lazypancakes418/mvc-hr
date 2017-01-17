@@ -6,7 +6,7 @@ var config = {
     'Ocp-Apim-Subscription-Key': 'b097ab36007e49169cbf5cf1fa38a35f'
 }
 // var link = [
-//     'https://upload.wikimedia.org/wikipedia/en/e/e8/Noir_vol_1.jpg',
+//     'https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Kurau_Phantom_Memory.jpg/230px-Kurau_Phantom_Memory.jpg',
 //     'https://upload.wikimedia.org/wikipedia/en/a/a6/Kanon_second_anime_Funimation_box_set.jpg',
 //     'https://upload.wikimedia.org/wikipedia/en/7/79/Please_Teacher_Vol_1_DVD.jpg',
 //     'https://upload.wikimedia.org/wikipedia/en/5/5d/AKIRA_(1988_poster).jpg',

@@ -1,19 +1,26 @@
-<div ng-repeat ="anime in dataArray" ng-cloak="" class="carddemoBasicUsage" >
-  <md-content class="md-padding" layout-xs="column" layout="row">
-    <div flex-xs="" flex-gt-xs="50" layout="column">
-     <md-card md-theme="{{ 'dark-grey' }}" md-theme-watch="">
-          <md-card-title>
-            <md-card-title-text>
-              <span class="md-headline">{{anime.entitle}}</span>
-              <span class="md-subhead">{{anime.japtitle}}</span>
-            </md-card-title-text>
-          </md-card-title>
+<md-content md-theme="input" layout="column" layout-padding>
+  <md-input-container style="padding-bottom: 0; margin-bottom: 0">
+     <md-icon class="material-icons">&#xE8B6;</md-icon>
+     <input ng-model="search" placeholder="Search here">
+  </md-input-container>
+</md-content>
+<div>
+  <md-content class="md-padding" layout="row">
+    <div flex="50" layout="column" ng-repeat="list in dataArray">
+      <md-card md-theme="{{ 'dark-grey' }}" ng-repeat="anime in list | filter: ">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{anime.entitle}}</span>
+            <span class="md-subhead">{{anime.japtitle}}</span>
+          </md-card-title-text>
+        </md-card-title>
+
         <md-card-content layout="row" layout-align="space-between">
+
           <div class="md-media-xl card-media"></div>
           <div class="card-image">
-                    <img class="img-responsive" src= {{anime.link}}>
-                    
-                </div>
+            <img class="img-responsive" src="{{anime.link}}">
+          </div>
           <md-card-actions layout="column">
             <md-button class="md-icon-button" aria-label="Favorite">
               <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
@@ -25,6 +32,17 @@
               <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
             </md-button>
           </md-card-actions>
+
+
         </md-card-content>
+
       </md-card>
+
     </div>
+
+
+  </md-content>
+
+
+
+</div>

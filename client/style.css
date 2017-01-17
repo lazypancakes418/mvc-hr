@@ -1,6 +1,10 @@
 *{
     border: 1 solid red;
 }
+    img {
+    height: 300px;
+    width: 300px
+}
 .loginBox{
     display: flex;
     justify-content: center;
