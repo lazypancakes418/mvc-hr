@@ -10,5 +10,5 @@ console.log(path.join(__dirname, '/../client'))
 app.use(express.static(path.join(__dirname , '/../client')))
 require('./config/routes.js')(app, express);
 console.log('server is listening on port 8000')
-bing.setImage();
+// bing.setImage();
 app.listen(8000);

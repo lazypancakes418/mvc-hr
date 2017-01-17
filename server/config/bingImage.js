@@ -1,1 +1,1 @@
-window.BING_API_KEY = 'b097ab36007e49169cbf5cf1fa38a35f'
+    window.BING_API_KEY = 'b097ab36007e49169cbf5cf1fa38a35f'
