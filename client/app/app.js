@@ -1,5 +1,5 @@
 angular.module('app', ['app.signin',
-    
+    'app.services',
     'app.details',
     'ngRoute'])
 .config(function ($routeProvider, $httpProvider, $locationProvider) {
