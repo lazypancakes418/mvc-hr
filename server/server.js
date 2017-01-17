@@ -1,9 +1,13 @@
 var express = require('express');
 var bodyParser = require('body-parser')
-var db = requite('./server/db')
+var morgan = require('morgan')
+var app = express();
+var path = require('path');
 
-var app = express;
-app.use(bodyParser.json)
-app.use(express.static(__dirname + 'client'))
+//app.use(morgan('dev'))
+app.use(bodyParser.json())
+console.log(path.join(__dirname, '../client'))
+app.use(express.static(path.join(__dirname , '../client')))
+require('./config/routes.js')(app, express);
 console.log('server is listening on port 8000')
 app.listen(8000);

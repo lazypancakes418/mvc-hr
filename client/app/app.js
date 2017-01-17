@@ -1,8 +1,8 @@
-angular.modules('anime', ['anime.index','ngroute'])
-.confif(function ($routeProvider, $httpProvider) {
+angular.module('anime', ['anime.signin','ngRoute'])
+.config(function ($routeProvider, $httpProvider) {
     $routeProvider
       .when('/', {
-          templateUrl: 'app/index/index.html',
-          controller: 'IndexCtrl'
+          templateUrl: 'index/signin.html',
+          controller: 'SigninCtrl'
       })
 })
