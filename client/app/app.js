@@ -1,4 +1,7 @@
-angular.module('app', ['anime.signin', 'anime.details','ngRoute'])
+angular.module('app', ['app.signin',
+    
+    'app.details',
+    'ngRoute'])
 .config(function ($routeProvider, $httpProvider, $locationProvider) {
     $locationProvider.hashPrefix('');
     $routeProvider
@@ -6,7 +9,7 @@ angular.module('app', ['anime.signin', 'anime.details','ngRoute'])
           templateUrl: '/app/index/signin.html',
           controller: 'SigninCtrl'
       }).when('/details', {
-          templateUrl: '/app/details/details.html',
+          templateUrl: '/app/animeDetail/details.html',
           controller: 'DetailsCtrl'
       })
 })

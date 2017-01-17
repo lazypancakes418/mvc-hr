@@ -4,7 +4,7 @@ var morgan = require('morgan')
 var app = express();
 var path = require('path');
 
-//app.use(morgan('dev'))
+app.use(morgan('dev'))
 app.use(bodyParser.json())
 console.log(path.join(__dirname, '/../client'))
 app.use(express.static(path.join(__dirname , '/../client')))
