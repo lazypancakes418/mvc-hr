@@ -7,7 +7,7 @@
 <div>
   <md-content class="md-padding" layout="row">
     <div flex="50" layout="column" ng-repeat="list in dataArray">
-      <md-card md-theme="{{ 'dark-grey' }}" ng-repeat="anime in list | filter: ">
+      <md-card md-theme="{{ 'dark-grey' }}" ng-repeat="anime in list ">
         <md-card-title>
           <md-card-title-text>
             <span class="md-headline">{{anime.entitle}}</span>
