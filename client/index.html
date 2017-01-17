@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html ng-app='anime' lang="en">
+<html ng-app='app' lang="en">
     <head>
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
+        <link href="/lib/angular-material/angular-material.css" rel="stylesheet">
     </head>
     <body>
-        index
         <div ng-view></div>
     <script src="/lib/angular/angular.min.js"></script>
     <script src="/lib/angular-route/angular-route.js"> </script>    
+    <script src="/lib/angular-aria/angular-aria.js"> </script>    
     <script src="/lib/angular-animate/angular-animate.js"> </script>
-    <script src="/lib/angular-material/angular-material.min.js"></script>
-    <script src="app/index/signin.js"></script>
+    <script src="/lib/angular-material/angular-material.js"></script>
     <script src= "app/app.js"></script>
+    <script src="app/index/signin.js"></script>
     </body>
 </html>

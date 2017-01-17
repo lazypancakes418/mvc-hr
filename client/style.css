@@ -1,4 +1,29 @@
+*{
+    border: 1 solid red;
+}
 .loginBox{
+    display: flex;
+    justify-content: center;
     max-width: 90%;
     width: 500px
+}
+
+.stretch input  {
+  width: 100%
+}
+#box{
+    margin-top: 500
+}
+.container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px
+}
+ 
+#luffy{
+    float: right
+}
+
+#archer{
+    float: left
 }
